@@ -11,6 +11,16 @@
 
 以下为两端模拟器的实际运行截图，天气数据为截图时的在线结果。
 
+### 原生首页
+
+原生首页提供城市搜索、最近查看记录和进入 Flutter 天气详情页的入口。
+
+| Android · Jetpack Compose | iOS · SwiftUI |
+| --- | --- |
+| <img src="docs/images/android-home.png" alt="Android 原生首页，展示城市搜索与最近查看" width="300"> | <img src="docs/images/ios-home.png" alt="iOS 原生首页，展示城市搜索与最近查看" width="300"> |
+
+### Flutter 天气详情页
+
 | Android | iOS |
 | --- | --- |
 | <img src="docs/images/android-weather.png" alt="Android 天气详情页" width="300"> | <img src="docs/images/ios-weather.png" alt="iOS 天气详情页" width="300"> |
