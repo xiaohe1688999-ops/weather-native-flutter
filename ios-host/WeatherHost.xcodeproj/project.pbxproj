@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0215C5A25F093CD7F93CD9C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46492AE57F168ED6074993CE /* Foundation.framework */; };
+		21DE3707237C062FECDE1E88 /* FlutterWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3332BA9BF6AC574B887B842 /* FlutterWeatherView.swift */; };
+		4488253A91E44E1A934DDB6F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CCD241E08DB232F8F5FF32 /* HomeView.swift */; };
+		47A14034B426A3EFA16278CB /* WeatherHostApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07058060DD04FA8CDF8EF340 /* WeatherHostApp.swift */; };
+		4B9B7A32B0EDAD998AAC8106 /* WeatherHostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611125830607AD5DAC7A2DD2 /* WeatherHostUITests.swift */; };
+		5B7DEE6B44AD6CDE34AFFCD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46492AE57F168ED6074993CE /* Foundation.framework */; };
+		89881215029E202FEE6E696F /* WeatherCore in Frameworks */ = {isa = PBXBuildFile; productRef = E96119EEE3299DF33839DCBC /* WeatherCore */; };
+		FA713D6CD5DD6CFEB2537CE0 /* FlutterNativeIntegration in Frameworks */ = {isa = PBXBuildFile; productRef = AB2CBC99C94C46322214D90A /* FlutterNativeIntegration */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E2BA1734BA11828AA063170 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B5C7B826DA5018E0C76C9B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE7D8A07DDECE9A0D756A000;
+			remoteInfo = WeatherHost;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04E4B51E51646CFFE5C13180 /* WeatherHostUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherHostUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07058060DD04FA8CDF8EF340 /* WeatherHostApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherHostApp.swift; sourceTree = "<group>"; };
+		21CCD241E08DB232F8F5FF32 /* HomeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		46492AE57F168ED6074993CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		611125830607AD5DAC7A2DD2 /* WeatherHostUITests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherHostUITests.swift; sourceTree = "<group>"; };
+		92F78218E96A35FC87121A9E /* WeatherHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3332BA9BF6AC574B887B842 /* FlutterWeatherView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlutterWeatherView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10B5914C358937B4A8A04B03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B7DEE6B44AD6CDE34AFFCD2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1AF0FC851ADD3A31933921 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0215C5A25F093CD7F93CD9C0 /* Foundation.framework in Frameworks */,
+				89881215029E202FEE6E696F /* WeatherCore in Frameworks */,
+				FA713D6CD5DD6CFEB2537CE0 /* FlutterNativeIntegration in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3770DE88FCEC87144E026B18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA831572F6A803AA3C7BA076 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45577D4C780846FC896AAB53 /* WeatherHost */ = {
+			isa = PBXGroup;
+			children = (
+				D3332BA9BF6AC574B887B842 /* FlutterWeatherView.swift */,
+				21CCD241E08DB232F8F5FF32 /* HomeView.swift */,
+				07058060DD04FA8CDF8EF340 /* WeatherHostApp.swift */,
+			);
+			path = WeatherHost;
+			sourceTree = "<group>";
+		};
+		524E1469E5FBBC9060F0815A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92F78218E96A35FC87121A9E /* WeatherHost.app */,
+				04E4B51E51646CFFE5C13180 /* WeatherHostUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86264EEC02DDFB583B73876B = {
+			isa = PBXGroup;
+			children = (
+				524E1469E5FBBC9060F0815A /* Products */,
+				3770DE88FCEC87144E026B18 /* Frameworks */,
+				45577D4C780846FC896AAB53 /* WeatherHost */,
+				AEEDF766930F27ED6D152715 /* WeatherHostUITests */,
+			);
+			sourceTree = "<group>";
+		};
+		AEEDF766930F27ED6D152715 /* WeatherHostUITests */ = {
+			isa = PBXGroup;
+			children = (
+				611125830607AD5DAC7A2DD2 /* WeatherHostUITests.swift */,
+			);
+			path = WeatherHostUITests;
+			sourceTree = "<group>";
+		};
+		DA831572F6A803AA3C7BA076 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				46492AE57F168ED6074993CE /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70B4B3D3A58DA713FEB0C648 /* WeatherHostUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AF875B7F3791FA360973C46 /* Build configuration list for PBXNativeTarget "WeatherHostUITests" */;
+			buildPhases = (
+				2EE0EAA43C58927480C06F93 /* Sources */,
+				10B5914C358937B4A8A04B03 /* Frameworks */,
+				D977EB98001A9ABF4EABF50B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A27E54E14EB5FCF588E4FB0F /* PBXTargetDependency */,
+			);
+			name = WeatherHostUITests;
+			productName = WeatherHostUITests;
+			productReference = 04E4B51E51646CFFE5C13180 /* WeatherHostUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		EE7D8A07DDECE9A0D756A000 /* WeatherHost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D9C49FC0B8101C868BBFD82 /* Build configuration list for PBXNativeTarget "WeatherHost" */;
+			buildPhases = (
+				0DF8CE3977080F1AD513D81F /* Sources */,
+				7D1AF0FC851ADD3A31933921 /* Frameworks */,
+				4B1802D71C97CE0AB358B5A7 /* Resources */,
+				99DB8B4D82B640B9F1D32E0C /* Build Flutter */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeatherHost;
+			packageProductDependencies = (
+				E96119EEE3299DF33839DCBC /* WeatherCore */,
+				AB2CBC99C94C46322214D90A /* FlutterNativeIntegration */,
+			);
+			productName = WeatherHost;
+			productReference = 92F78218E96A35FC87121A9E /* WeatherHost.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B5C7B826DA5018E0C76C9B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = BF7237930DB37E7340A82EB7 /* Build configuration list for PBXProject "WeatherHost" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 86264EEC02DDFB583B73876B;
+			packageReferences = (
+				56D8B94FCB2E9C339CDD3E45 /* XCLocalSwiftPackageReference "WeatherCore" */,
+				22B99DD9860BC65D0D1DED47 /* XCLocalSwiftPackageReference "../weather_flutter/build/ios/SwiftPackages/FlutterNativeIntegration" */,
+			);
+			productRefGroup = 524E1469E5FBBC9060F0815A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE7D8A07DDECE9A0D756A000 /* WeatherHost */,
+				70B4B3D3A58DA713FEB0C648 /* WeatherHostUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B1802D71C97CE0AB358B5A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D977EB98001A9ABF4EABF50B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		99DB8B4D82B640B9F1D32E0C /* Build Flutter */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(FLUTTER_SWIFT_PACKAGE_OUTPUT)/Scripts/FlutterAssembleInputs.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "Build Flutter";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh \"$FLUTTER_SWIFT_PACKAGE_OUTPUT/Scripts/flutter_integration.sh\" assemble";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DF8CE3977080F1AD513D81F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21DE3707237C062FECDE1E88 /* FlutterWeatherView.swift in Sources */,
+				4488253A91E44E1A934DDB6F /* HomeView.swift in Sources */,
+				47A14034B426A3EFA16278CB /* WeatherHostApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EE0EAA43C58927480C06F93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9B7A32B0EDAD998AAC8106 /* WeatherHostUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A27E54E14EB5FCF588E4FB0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WeatherHost;
+			target = EE7D8A07DDECE9A0D756A000 /* WeatherHost */;
+			targetProxy = 9E2BA1734BA11828AA063170 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		080758A2F4CBC826EBCAC3FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		274C01A97E74804E1FAF3E90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.weather.nativehost.uitests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = WeatherHost;
+			};
+			name = Debug;
+		};
+		4D214E917A96C6C174117C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FLUTTER_APPLICATION_PATH = "$(SRCROOT)/../weather_flutter";
+				FLUTTER_SWIFT_PACKAGE_OUTPUT = "$(SRCROOT)/../weather_flutter/build/ios/SwiftPackages";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "WeatherHost/Info-$(CONFIGURATION).plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.weather.nativehost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77685BD0813B711A205B2FC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FLUTTER_APPLICATION_PATH = "$(SRCROOT)/../weather_flutter";
+				FLUTTER_SWIFT_PACKAGE_OUTPUT = "$(SRCROOT)/../weather_flutter/build/ios/SwiftPackages";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "WeatherHost/Info-$(CONFIGURATION).plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.weather.nativehost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D009F0E6AE3B28CC4B796427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.weather.nativehost.uitests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = WeatherHost;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F261A60055469FB2D5D6DB49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D9C49FC0B8101C868BBFD82 /* Build configuration list for PBXNativeTarget "WeatherHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D214E917A96C6C174117C99 /* Release */,
+				77685BD0813B711A205B2FC3 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AF875B7F3791FA360973C46 /* Build configuration list for PBXNativeTarget "WeatherHostUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D009F0E6AE3B28CC4B796427 /* Release */,
+				274C01A97E74804E1FAF3E90 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF7237930DB37E7340A82EB7 /* Build configuration list for PBXProject "WeatherHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F261A60055469FB2D5D6DB49 /* Debug */,
+				080758A2F4CBC826EBCAC3FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		22B99DD9860BC65D0D1DED47 /* XCLocalSwiftPackageReference "../weather_flutter/build/ios/SwiftPackages/FlutterNativeIntegration" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../weather_flutter/build/ios/SwiftPackages/FlutterNativeIntegration;
+		};
+		56D8B94FCB2E9C339CDD3E45 /* XCLocalSwiftPackageReference "WeatherCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = WeatherCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB2CBC99C94C46322214D90A /* FlutterNativeIntegration */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22B99DD9860BC65D0D1DED47 /* XCLocalSwiftPackageReference "../weather_flutter/build/ios/SwiftPackages/FlutterNativeIntegration" */;
+			productName = FlutterNativeIntegration;
+		};
+		E96119EEE3299DF33839DCBC /* WeatherCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56D8B94FCB2E9C339CDD3E45 /* XCLocalSwiftPackageReference "WeatherCore" */;
+			productName = WeatherCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2B5C7B826DA5018E0C76C9B4 /* Project object */;
+}

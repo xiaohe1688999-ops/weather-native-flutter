@@ -1,0 +1,21 @@
+name: weather_flutter
+description: Shared weather experience embedded in native Android and iOS hosts.
+publish_to: none
+version: 1.0.0+1
+environment:
+  sdk: '>=3.13.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^3.0.0
+  dio: ^5.9.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+flutter:
+  uses-material-design: true
+  module:
+    androidX: true
+    androidPackage: dev.weather.weather_flutter
+    iosBundleIdentifier: dev.weather.weatherFlutter

@@ -1,0 +1,33 @@
+.DS_Store
+.tools/
+**/.idea/
+**/*.iml
+**/local.properties
+**/.gradle/
+**/build/
+**/.dart_tool/
+**/.android/
+**/.ios/
+**/xcuserdata/
+**/DerivedData/
+**/.build/
+*.log
+
+# Local environment and signing credentials
+.env
+.env.*
+!.env.example
+**/key.properties
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.mobileprovision
+*.pem
+*.p8
+*.key
+
+# Distribution artifacts
+*.apk
+*.aab
+*.ipa
