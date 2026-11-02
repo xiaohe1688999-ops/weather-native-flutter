@@ -9,6 +9,9 @@
 - 附件名 `weather-native-flutter-v0.1.0-debug.apk`，161092943 字节（约 154 MiB）；SHA-256：`1e65ee409ff0b9bbf8c1ea7b6b493f4ffcb26e6fd8e297794e32f9b9090028ed`，随附件提供 `SHA256SUMS.txt`。v0.1.0 为仓库演示标签，未改动应用内版本号。
 - 本地日志：`.tools/apk-release-build.log`、`.tools/apk-release-signature.log`、`.tools/apk-release-metadata.log`、`.tools/apk-release-smoke.log`（首次失败）、`.tools/apk-release-smoke-retry.log`（修正后通过）。
 - 本次没有重新运行完整单元测试 / Lint 套件；本次变更仅涉及测试定位、忽略规则与文档，完整套件历史结果见下文。ARM 真机、其他 Android 版本、生产签名与商店发布未验证，不将本演示包描述为生产发行版。
+- 发布验收：GitHub Release `v0.1.0` 已作为公开预发布版发布，标签固定指向 `911b746bfa84df63583719071506c440e4ba26b6`（包含测试修正、README 下载入口及以上验证记录），APK 和校验文件先上传至草稿并核对完整性后再发布。
+- 使用不带 GitHub 登录凭据的 HTTPS 请求下载公开 APK 和 `SHA256SUMS.txt`，`shasum -a 256 -c SHA256SUMS.txt` 返回 OK；GitHub 附件大小与摘要也与本地测试 APK 一致。匿名下载日志 `.tools/apk-release-download.log`。
+- 方案一致性：一致。原计划中的“测试失败先查明并修复”已执行；新增测试时序修正和 `.kotlin/` 忽略规则均源于本次验证发现的问题，未改变应用功能。构建、签名、在线安装测试、草稿附件核验、公开发布与下载校验均通过；剩余验证范围如上。
 
 ## 2026-11-02：GitHub 面试展示上传准备
 
