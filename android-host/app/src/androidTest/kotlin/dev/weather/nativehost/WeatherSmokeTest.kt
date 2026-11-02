@@ -24,7 +24,9 @@ class WeatherSmokeTest {
         search.text = "Shanghai"
         val city = device.wait(Until.findObject(By.res("city-1796236")), 25_000)
         assertNotNull("Requires working Open-Meteo connection", city)
-        city.click()
+        // Compose may replace the result node while the keyboard/layout settles.
+        device.waitForIdle()
+        device.findObject(By.res("city-1796236")).click()
         // Flutter 在 Android 上通过无障碍描述暴露不可编辑的 Text 文本。
         assertTrue(device.wait(Until.hasObject(By.descContains("当前天气")), 35_000))
         val forecastVisible = showForecast(device)

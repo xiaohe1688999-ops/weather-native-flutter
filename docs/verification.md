@@ -1,5 +1,15 @@
 # 实施与验证记录
 
+## 2026-11-02：Android 演示 APK v0.1.0 验证
+
+- 从当前源码执行 `cd android-host && ./gradlew :app:assembleDebug --rerun-tasks --console=plain`，111 项任务重新执行，构建通过。APK 作为 GitHub Release 附件提供，不进入源码仓库；补充忽略构建生成的 `.kotlin/` 缓存。
+- 使用 SDK 36.0.0 的 `apksigner verify --verbose` 和 `aapt dump badging` 检查通过：单个签名者，APK v2 签名有效，Debug 包；包名 `dev.weather.nativehost`，应用版本 1.0 / versionCode 1，最低 API 24，target API 36，包含 armeabi-v7a、arm64-v8a、x86_64。
+- 首次 `./scripts/smoke-android.sh` 在点击搜索结果时出现 `StaleObjectException`，定位于 Compose 界面更新期间持有旧 UiObject2。测试改为等待界面空闲后重新查找节点；未修改应用逻辑或公共 API。
+- 修正后重新运行同一在线测试通过：Android 10 / API 29、x86_64 模拟器，1 项测试、0 失败、0 错误、0 跳过；覆盖原生搜索上海、Flutter 当前天气与预报、横竖屏、返回、最近城市及再次进入。测试前后 APK 的 SHA-256 一致，最终文件签名复核通过。
+- 附件名 `weather-native-flutter-v0.1.0-debug.apk`，161092943 字节（约 154 MiB）；SHA-256：`1e65ee409ff0b9bbf8c1ea7b6b493f4ffcb26e6fd8e297794e32f9b9090028ed`，随附件提供 `SHA256SUMS.txt`。v0.1.0 为仓库演示标签，未改动应用内版本号。
+- 本地日志：`.tools/apk-release-build.log`、`.tools/apk-release-signature.log`、`.tools/apk-release-metadata.log`、`.tools/apk-release-smoke.log`（首次失败）、`.tools/apk-release-smoke-retry.log`（修正后通过）。
+- 本次没有重新运行完整单元测试 / Lint 套件；本次变更仅涉及测试定位、忽略规则与文档，完整套件历史结果见下文。ARM 真机、其他 Android 版本、生产签名与商店发布未验证，不将本演示包描述为生产发行版。
+
 ## 2026-11-02：GitHub 面试展示上传准备
 
 - README 开头突出 Android / iOS 原生主页与 Flutter 共享天气详情页；保留现有功能、架构、截图和历史验证记录，未添加开源许可证。

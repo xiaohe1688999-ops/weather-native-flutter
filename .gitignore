@@ -4,6 +4,7 @@
 **/*.iml
 **/local.properties
 **/.gradle/
+**/.kotlin/
 **/build/
 **/.dart_tool/
 **/.android/

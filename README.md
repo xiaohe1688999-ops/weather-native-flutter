@@ -7,6 +7,14 @@
 - 共享天气页：Flutter、Riverpod、Dio。
 - 数据：Open-Meteo，当前配置无需 API Key，界面已标注来源；使用范围见下文说明。
 
+## Android 演示包下载
+
+[下载 Android APK · v0.1.0（Debug，约 154 MiB）](https://github.com/xiaohe1688999-ops/weather-native-flutter/releases/download/v0.1.0/weather-native-flutter-v0.1.0-debug.apk) · [版本与安装说明](https://github.com/xiaohe1688999-ops/weather-native-flutter/releases/tag/v0.1.0) · [SHA-256 校验文件](https://github.com/xiaohe1688999-ops/weather-native-flutter/releases/download/v0.1.0/SHA256SUMS.txt)
+
+面试演示用预发布版本，使用调试密钥签名；最低支持 Android 7.0，包含 armeabi-v7a、arm64-v8a 和 x86_64 架构，需要联网获取地点与天气数据。下载后在 Android 设备上打开 APK，按系统提示允许当前来源安装，再启动“天气手记”。应用内版本号为 1.0，仓库演示版本标签为 v0.1.0。
+
+已在 Android 10 / x86_64 模拟器验证安装及在线往返流程；ARM 真机与其他 Android 版本未验证。iOS 暂提供源码和截图，未提供签名安装包。
+
 ## 应用预览
 
 以下为两端模拟器的实际运行截图，天气数据为截图时的在线结果。
