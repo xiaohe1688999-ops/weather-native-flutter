@@ -8,7 +8,16 @@
 - 审查 65 个候选提交文件（含两张实际查看的天气截图）；关键词检查未发现个人绝对路径、凭据赋值或令牌格式，Gitleaks 8.30.1 暂存区扫描未发现密钥。保留应用原有开发者署名。此检查不构成第三方素材权属证明或无漏洞保证。
 - `./scripts/prepare.sh`、`./scripts/check.sh` 本次均通过：Flutter 分析无问题、11 项测试通过；Android 5 项单元测试及 Debug 构建 / Lint 通过（0 错误、7 项既有警告）；Swift 4 项测试通过；iOS Debug 无签名模拟器构建通过。日志位于被忽略的 `.tools/github-prepare.log` 和 `.tools/github-check.log`。
 - 额外检查通过：Markdown 本地链接、提交文件体积、必要构建文件、可执行权限、Shell / Ruby / Python 语法、plist 解析及 Xcode 工程格式。暂存差异按 Windows 批处理文件的 CRLF 行尾规则检查通过，未改写 Gradle Wrapper。
-- 本次未重新运行在线 UI 冒烟、真机或 Release 签名验证。远程发布、匿名访问及远程克隆构建结果待发布验收后另记。
+- 本次未重新运行在线 UI 冒烟、真机或 Release 签名验证。远程发布及克隆验收见下节。
+
+### 公开发布与远程克隆验收
+
+- 已发布至 [xiaohe1688999-ops/weather-native-flutter](https://github.com/xiaohe1688999-ops/weather-native-flutter)，可见性 Public，默认分支 main。首次提交 `df984de03be6a643650aed16bdc800259285297a`。
+- 使用不带登录凭据的 HTTP 请求确认仓库首页及渲染的 README 可访问，两张预览截图、架构与验证文档均返回成功；远程 main 与本地提交一致。
+- 使用禁用 Git credential helper 的 HTTPS 克隆取得源码，逐一比较 65 个文件与本地提交完全一致；必要脚本的可执行权限保留，本机配置和构建产物未进入源码树。
+- 在新克隆目录执行 `./scripts/prepare.sh` 和 `./scripts/check.sh`，均以退出码 0 完成：Flutter 分析及 11 项测试、Android 5 项单元测试 / Debug 构建 / Lint（0 错误、7 项既有警告）、Swift 4 项测试、iOS Debug 无签名模拟器构建全部通过。克隆副本工作区干净。
+- 此项验证使用同一台 macOS 的既有 SDK 和依赖缓存，未验证全新机器安装 SDK 的过程；日志为本地忽略文件 `.tools/github-remote-checkout/.tools/remote-prepare.log` 与 `remote-check.log`。
+- QA 总评：上传清单、忽略规则、匿名访问与远程克隆构建验收通过；本次交付与 GitHub 面试展示上传方案一致。上述已声明的真机、在线 UI 重跑与 Release 验证不属于本次上传验收。
 
 ## 2026-11-02：IPA 生成尝试
 
